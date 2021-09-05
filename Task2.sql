@@ -38,6 +38,6 @@ INSERT ProductsCategories
 	(2, 2),
 	(1, 3);
 
-SELECT Product.Name, Category.Name FROM ProductsCategories
+SELECT Product.Name as ProductName, Category.Name as Category FROM ProductsCategories
 	INNER JOIN Product ON ProductsCategories.ProductID = Product.ID
 	INNER JOIN Category ON ProductsCategories.CategoryID = Category.ID;
